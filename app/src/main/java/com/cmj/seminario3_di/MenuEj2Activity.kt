@@ -25,7 +25,8 @@ class MenuEj2Activity : AppCompatActivity() {
         }
 
         numeroET = findViewById(R.id.numeroET)
-        numeroET.setText((1..9).random())
+        val numeroRandom = (1..9).random()
+        numeroET.setText(numeroRandom.toString())
         textoET = findViewById(R.id.textoET)
         botonPasarDatos = findViewById(R.id.botonPasarDatos)
 
