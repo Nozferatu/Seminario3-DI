@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuEj1Activity">
+
+    <TextView
+        android:id="@+id/estadoPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tres en raya"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/botonReiniciar"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Reiniciar partida"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/estadoPartida"
+        app:layout_constraintBottom_toTopOf="@id/tablero"
+        />
+
+    <LinearLayout
+        android:id="@+id/tablero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonReiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/tableroFila1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/casilla1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tableroFila2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/casilla4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tableroFila3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/casilla7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/casilla9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:src="@drawable/casilla_blanco"
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
